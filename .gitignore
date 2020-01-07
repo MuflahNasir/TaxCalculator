@@ -1,3 +1,18 @@
+sample.js
+reset-cache
+yarn.lock
+.buckconfig
+.eslintrc
+.flowconfig
+.gitattributes
+.vscode
+.expo-shared
+.expo
+--
+__test__
+package-lock.json
+
+
 # OSX
 #
 .DS_Store
