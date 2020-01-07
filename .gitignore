@@ -10,7 +10,9 @@ yarn.lock
 .expo
 --
 __test__
-package-lock.json
+package-lock.js
+.prettierrc
+.watchmanconfig
 
 
 # OSX
