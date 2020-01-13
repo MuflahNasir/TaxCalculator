@@ -42,6 +42,12 @@ class Home extends Component {
                 </Text>
                 <Text note>0.00</Text>
               </Col>
+              <Col style={styles.text}>
+                <Text>
+                  Total
+                </Text>
+                <Text note>0.00</Text>
+              </Col>
             </Grid>
           </Card>
         </View>
@@ -85,7 +91,9 @@ const AppNavigator = createBottomTabNavigator(
           )  
         }   
       },
-    Stats: { screen: Stats,
+    Stats: {
+      screen: Stats,
+      tabBarLabel:'Stats',
       navigationOptions:{  
           tabBarIcon:({tintColor})=>(  
               <Icon name="stats" color={tintColor} size={14}/>  
