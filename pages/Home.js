@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 //import react in our code.
-import { StyleSheet, View, Text } from 'react-native';
-import { Card, Grid, Col, Fab, Icon, Button } from 'native-base'
+import { View, Text } from 'react-native';
+import { Card, Grid, Col, Fab, Icon } from 'native-base'
 // import all basic components
-
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs'
-
+//import Pages
 import Expense from './Expense'
 import Stats from "./Stats";
+//import styles
+import { styles } from './styles'
 
 class Home extends Component {
 
@@ -34,13 +35,13 @@ class Home extends Component {
                 <Text>
                   Income
                 </Text>
-                <Text note>0.00</Text>
+                <Text note style={styles.note1}>0.00</Text>
               </Col>
               <Col style={styles.text}>
                 <Text>
                   Expense
                 </Text>
-                <Text note>0.00</Text>
+                <Text note style={styles.note2}>0.00</Text>
               </Col>
               <Col style={styles.text}>
                 <Text>
@@ -63,22 +64,6 @@ class Home extends Component {
     );
   }
 }
- 
-const styles = StyleSheet.create({
-  MainContainer: {
-    flex: 1,
-  },
-  conatiner: {
-    height: 50,
-  },
-  text: {
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  fab: {
-    backgroundColor: '#FF9800'
-  }
-});
 
 const AppNavigator = createBottomTabNavigator(
   {
