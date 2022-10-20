@@ -22,7 +22,7 @@
     "react-native-modal": "^11.5.3",
     "react-native-paper": "^3.6.0",
     "react-native-popup-dialog": "^0.18.3",
-    "react-native-reanimated": "^1.4.0",
+    "react-native-reanimated": "^2.10.0",
     "react-native-spacer": "^1.5.0",
     "react-native-text-ticker": "^1.0.0",
     "react-native-vector-icons": "^6.6.0",
